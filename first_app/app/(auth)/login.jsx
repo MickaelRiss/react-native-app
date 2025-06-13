@@ -12,7 +12,7 @@ const Login = () => {
     }
 
     return (
-        <ThemedView style={styles.container}>
+        <ThemedView style={styles.container} safe={true}>
             <Spacer />
             <ThemedText title={true} style={styles.title}>
                 Login to your account
@@ -38,7 +38,6 @@ export default Login
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
         alignItems: 'center',
     },
     title: {

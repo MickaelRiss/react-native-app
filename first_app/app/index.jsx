@@ -7,7 +7,8 @@ import Spacer from '../components/Spacer'
 
 const Home = () => {
     return (
-        <ThemedView style={styles.container}>
+        <ThemedView style={styles.container} safe={true}>
+            <Spacer />
             <ThemedLogo style={styles.img} />
             <Spacer height={20}/>
             <ThemedText title={true} style={styles.title}>The Number 1</ThemedText>
@@ -41,7 +42,6 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center',
     },
     title: {
         fontWeight: 'bold',
