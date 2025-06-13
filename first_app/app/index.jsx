@@ -15,11 +15,11 @@ const Home = () => {
             <ThemedText>Reading list App</ThemedText>
             <Spacer height={30}/>
             <ThemedView style={{ display: 'flex', flexDirection: 'row', gap: 10 }}>
-                <Link href="/about" style={styles.link}>
-                    <ThemedText>About page</ThemedText>
+                <Link href="/login" style={styles.link}>
+                    <ThemedText>Login page</ThemedText>
                 </Link>
-                <Link href="/contact" style={styles.link}>
-                    <ThemedText>About page</ThemedText>
+                <Link href="/register" style={styles.link}>
+                    <ThemedText>Register page</ThemedText>
                 </Link>
             </ThemedView>
         </ThemedView>
