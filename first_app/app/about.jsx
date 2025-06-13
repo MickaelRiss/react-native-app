@@ -1,17 +1,21 @@
-import { StyleSheet, Text, View, useColorScheme } from "react-native"
+import { StyleSheet, useColorScheme } from "react-native"
 import { Link } from 'expo-router'
 import { Colors } from '../constants/Colors'
+import ThemedView from '../components/ThemedView'
+import ThemedText from '../components/ThemedText'
+import Spacer from '../components/Spacer'
 
 const About = () => {
     const colorScheme = useColorScheme()
     const theme = Colors[colorScheme] ?? Colors.light
 
     return (
-        <View 
+        <ThemedView 
             style={[styles.container, { backgroundColor: theme.background }]}
 
         >
-            <Text style={[styles.title, { color: theme.text }]}>About Page</Text>
+            <ThemedText title={true} style={styles.title}>About Page</ThemedText>
+            <Spacer height={16} />
             <Link 
                 href={'/'} 
                 style={[
@@ -22,9 +26,9 @@ const About = () => {
                     }
                 ]}
             >
-                Back home
+                <ThemedText>Back Home</ThemedText>
             </Link>
-        </View>    
+        </ThemedView>    
     )
 }
 

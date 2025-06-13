@@ -1,5 +1,5 @@
 import { Slot, Stack } from 'expo-router'
-import { StyleSheet, View, Text, useColorScheme } from "react-native"
+import { useColorScheme } from "react-native"
 import { Colors } from '../constants/Colors'
 import { StatusBar } from 'expo-status-bar'
 
@@ -24,7 +24,3 @@ const RootLayout = () => {
 }
 
 export default RootLayout
-
-const styles = StyleSheet.create({
-
-})
