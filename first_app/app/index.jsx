@@ -14,12 +14,21 @@ const Home = () => {
             <Spacer height={10}/>
             <ThemedText>Reading list App</ThemedText>
             <Spacer height={30}/>
-            <ThemedView style={{ display: 'flex', flexDirection: 'row', gap: 10 }}>
+            <ThemedView style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
                 <Link href="/login" style={styles.link}>
                     <ThemedText>Login page</ThemedText>
                 </Link>
                 <Link href="/register" style={styles.link}>
                     <ThemedText>Register page</ThemedText>
+                </Link>
+                <Link href="/profile" style={styles.link}>
+                    <ThemedText>Profile page</ThemedText>
+                </Link>
+                <Link href="/create" style={styles.link}>
+                    <ThemedText>Create page</ThemedText>
+                </Link>
+                <Link href="/books" style={styles.link}>
+                    <ThemedText>Books page</ThemedText>
                 </Link>
             </ThemedView>
         </ThemedView>
