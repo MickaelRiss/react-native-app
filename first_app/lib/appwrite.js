@@ -1,4 +1,3 @@
-// lib/appwrite.js
 import { Client, Account, Avatars } from 'react-native-appwrite'
 
 const client = new Client()

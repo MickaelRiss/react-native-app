@@ -1,7 +1,12 @@
 import { Stack } from 'expo-router'
 import { StatusBar } from 'expo-status-bar'
+import { useUser } from '../../hooks/useUser'
 
 const RootLayout = () => { 
+    const { user } = useUser()
+    console.log('User depuis auth:', user)
+    console.log('boudin')
+    
     return (
         <>
             <StatusBar value='auto' />

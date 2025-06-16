@@ -12,14 +12,16 @@ import { useUser } from '../../hooks/useUser'
 const Login = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    const { user } = useUser()
+    const { user, login } = useUser()
 
-    const handleSubmit = () => {
-        
-        console.log('Login form submitted')
-        console.log('Current user:', user)
-        console.log(email)
-        console.log(password)
+    const handleSubmit = async () => {
+        try {
+            console.log('Login form submitted')
+            await login(email, password)
+            console.log('Current user is: ', user)
+        } catch(error) {
+            console.log(error.message)
+        }
     }
 
     return (
