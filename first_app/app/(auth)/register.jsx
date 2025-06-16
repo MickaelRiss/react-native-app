@@ -6,7 +6,7 @@ import Spacer from '../../components/Spacer'
 import ThemedButton from '../../components/ThemedButton'
 import ThemedTextInput from '../../components/ThemedTextInput'
 import { useState } from "react";
-import { useUser } from "../../hooks/useUser";
+import { useUser } from "../../hooks/useUser"
 import { Colors } from '../../constants/Colors'
 
 const Register = () => {

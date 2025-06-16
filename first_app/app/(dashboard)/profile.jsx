@@ -6,7 +6,7 @@ import { useUser } from '../../hooks/useUser'
 import { Colors } from "../../constants/Colors"
 
 const Profile = () => {
-    const { logout } = useUser()
+    const { logout, user } = useUser()
     const colorScheme = useColorScheme()
     const theme = Colors[colorScheme] && Colors.light
     
@@ -33,9 +33,16 @@ const Profile = () => {
 
             <Spacer height="50"/>
             <ThemedText title={true} style={styles.heading}>
-                Your Email
+                Your Profile
             </ThemedText>
             <Spacer />
+
+            <ThemedView style={{ flexDirection: 'row', gap: 10 }}>
+                <ThemedText title={true} style={{ fontWeight: 'bold'}}>Email:</ThemedText>
+                <ThemedText>{user.email}</ThemedText>
+            </ThemedView>
+            
+            <Spacer height={80}/>
             <ThemedText>Time to start reading some books...</ThemedText>
             <Spacer />
         </ThemedView>
