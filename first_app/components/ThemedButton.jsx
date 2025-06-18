@@ -7,7 +7,8 @@ const ThemedButton = ({ width = '20%', style, ...props }) => {
       style={({pressed}) => [
         styles.btn,
         { width: width }, 
-        pressed &&  styles.pressed
+        pressed &&  styles.pressed,
+        style
       ]}
       { ...props }
     />  

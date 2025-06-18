@@ -4,6 +4,7 @@ import ThemedView from '../components/ThemedView'
 import ThemedLogo from '../components/ThemedLogo'
 import ThemedText from '../components/ThemedText'
 import Spacer from '../components/Spacer'
+import Constants from 'expo-constants'
 
 const Home = () => {
     return (
