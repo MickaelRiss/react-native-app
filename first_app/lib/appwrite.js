@@ -3,6 +3,7 @@ import { Client, Account, Avatars, Databases } from 'react-native-appwrite'
 const client = new Client()
 
 client
+    .setEndpoint('https://cloud.appwrite.io/v1')
     .setPlatform('dev.mendosdv.firstapp') 
     .setProject('6849f46c001538f26ff8')
 
